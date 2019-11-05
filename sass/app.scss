@@ -1,0 +1,47 @@
+@tailwind base;
+
+@tailwind components;
+
+@import 'base';
+@import 'progressbar';
+@import 'github-markdown';
+@import '../node_modules/prismjs/themes/prism-tomorrow.css';
+@import '../node_modules/saber-highlight-css/default.css';
+
+
+code:not([class*='language-']) {
+	@apply bg-orange-200 text-orange-500 rounded px-1;
+	padding-top: .15rem;
+	padding-bottom: .15rem;
+}
+
+.code-line.highlighted {
+    box-shadow: inset 3px 0 0 0 #c9a7ff;
+}
+
+.saber-highlight {
+    background: #011627;
+}
+
+.markdown-body {
+	h1, h2, h3, h4, h5, h6 {
+		position: relative;
+		a {
+			opacity: 0;
+			position: absolute;
+		    left: -30px;
+			&:hover {
+				a {
+					opacity: 1;
+				}
+			}
+		}
+		&:hover {
+			a {
+				opacity: 1;
+			}
+		}
+	}
+}
+
+@tailwind utilities;

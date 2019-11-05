@@ -1,0 +1,36 @@
+{
+  "name": "docs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "saber",
+    "build": "rm -rf ~/Sites/empathy-docs/docs && saber build && mv ~/Sites/empathy-docs/public ~/Sites/empathy-docs/docs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.25",
+    "@fortawesome/free-brands-svg-icons": "^5.11.2",
+    "@fortawesome/free-solid-svg-icons": "^5.11.2",
+    "@fortawesome/vue-fontawesome": "^0.1.7",
+    "fuse.js": "^3.4.5",
+    "github-markdown-css": "^3.0.1",
+    "prismjs": "^1.17.1",
+    "saber": "^0.9.1",
+    "saber-highlight-css": "^0.1.1",
+    "saber-plugin-git-modification-time": "^0.1.2",
+    "saber-plugin-prismjs": "^0.2.4",
+    "saber-plugin-search": "^0.1.1",
+    "vue-async-computed": "^3.7.0",
+    "webfontloader": "^1.6.28"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.7.1",
+    "saber-plugin-query-posts": "^0.4.5",
+    "sass": "^1.23.3",
+    "sass-loader": "^8.0.0",
+    "tailwindcss": "^1.1.3"
+  }
+}
